@@ -16,6 +16,8 @@
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
+
+          <!-- Bio Section -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -25,15 +27,15 @@
                 <p>I'm a research scientist/engineer at <a href="https://research.adobe.com/">Adobe Research</a> in San Francisco.
                 </p>
                 <p>
-                  At Adobe, I work with <a href="https://www.adobe.com/products/firefly.html">FireFly team</a> for <a href="https://www.youtube.com/watch?v=dj27JV9WOyw">Structure Reference</a>.
+                  At Adobe, I work with the <a href="https://www.adobe.com/products/firefly.html">FireFly team</a> on <a href="https://www.youtube.com/watch?v=dj27JV9WOyw">Structure Reference</a>.
                 </p>
                 <p>
-                  I got my PhD degree at Hebrew University of Jerusalem in 2022, under the supervision of Prof. Dani Lischinski and Eli Shechtman from Adobe Research. 
+                  I got my PhD at Hebrew University of Jerusalem in 2022, under the supervision of Prof. Dani Lischinski and Eli Shechtman from Adobe Research. 
                   I got my bachelor degree at Tongji University in 2016.
                 </p>
                 <p style="text-align:center">
-                  <a href="zongze.wu@mail.huji.ac.il">Email</a> &nbsp;/&nbsp;
-                  <a href="https://docs.google.com/document/d/1nA9BjbzGH5CaL2SCBd2_lkMdSCuRxZE82HLNRfPy7kk/edit?usp=sharing">CV</a> &nbsp;/&nbsp;
+                  <a href="mailto:zongze.wu@mail.huji.ac.il">Email</a> &nbsp;/&nbsp;
+                  <a href="Resume.docx">CV</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=V8FwQGkAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                   <a href="https://x.com/zongze_wu">Twitter</a> 
                 </p>
@@ -43,255 +45,369 @@
               </td>
             </tr>
           </tbody></table>
+
+          <!-- Research Heading -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Research</heading>
                 <p>
-                  My main interests are in generative modeling (GenAI), including diffusion models, GANs, and autoregressive models. 
-                  I work on multi-modality generation/editing tasks, including images, videos, and text.
+                  My research focuses on generative modeling, spanning diffusion models, GANs, and autoregressive models.
+                  I am particularly interested in training efficiency, simpler training frameworks, and efficient architecture design
+                  &mdash; recent work includes
+                  <a href="https://arxiv.org/abs/2512.02012">one-step generation via mean flows</a>,
+                  <a href="https://end2end-diffusion.github.io/irepa">representation alignment for diffusion</a>, and
+                  <a href="https://xingjianbai.com/sparse-causal-diffusion/">separable causal inference in video diffusion</a>.
                 </p>
               </td>
             </tr>
           </tbody></table>
+
+          <!-- Publications -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-
-    <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='r2r_image'>
-            <img src='images/cat2dog.gif' width=100%>
-          </div>
-        </div>
-      
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://betterze.github.io/TurboEdit/">
-          <span class="papertitle">Turboedit: Instant text-based image editing.</span>
-        </a>
-        <br>
-        <strong>Zongze Wu</strong>, 
-        <a href="https://home.ttic.edu/~nickkolkin/home.html">Nicholas Kolkin</a>,
-        <a href="https://www.linkedin.com/in/jonathan-brandt-23b334/">Jonathan Brandt</a>,
-        <a href="https://richzhang.github.io/">Richard Zhang</a>,
-        <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a> 
-        <br>
-        <em>ECCV 2024</em>, 
-        <br>
-        <a href="https://betterze.github.io/TurboEdit/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2408.08332">arXiv</a>
-        /
-        <a href="https://www.youtube.com/watch?v=1LG2xCTRc3s&t=1s">Video</a>
-        <p></p>
-        <p>
-          Users can upload an image, and edit the image with natural language. Each edit only takes half a second.
-				</p>
-      </td>
-    </tr>
+          <!-- Separable Causal Diffusion -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/scd.jpg" alt="SCD" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://xingjianbai.com/sparse-causal-diffusion/">
+                <span class="papertitle">Causality in Video Diffusers is Separable from Denoising</span>
+              </a>
+              <br>
+              <a href="https://xingjianbai.com/">Xingjian Bai</a>,
+              <a href="https://guandehe.github.io/">Guande He</a>,
+              <a href="https://zhengqili.github.io/">Zhengqi Li</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+              <a href="http://www.xunhuang.me/">Xun Huang</a>,
+              <strong>Zongze Wu</strong>
+              <br>
+              <em>arXiv 2026</em>
+              <br>
+              [<a href="https://xingjianbai.com/sparse-causal-diffusion/">project page</a>]
+              [<a href="https://arxiv.org/abs/2602.10095">arXiv</a>]
+              <p>We show that causal reasoning in video diffusion models is separable from denoising, introducing Separable Causal Diffusion (SCD) that significantly improves throughput and per-frame latency.</p>
+            </td>
+          </tr>
 
 
-    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          
-          <img src='images/lazy_diffusion.jpg' width=100%>
-        </div>
-        
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://lazydiffusion.github.io/">
-          <span class="papertitle">Lazy diffusion transformer for interactive image editing.</span>
-        </a>
-        <br>
-        <a href="https://yotamnitzan.github.io/">Yotam Nitzan</a>,
-        <strong>Zongze Wu</strong>,
-        <a href="https://richzhang.github.io/">Richard Zhang</a>,
-        <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
-        <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>,
-        <a href="https://taesung.me/">Taesung Park</a>,
-        <a href="https://mgharbi.com/">Michaël Gharbi</a>
-        <br>
-        <em>ECCV 2024</em>
-        <br>
-        <a href="https://lazydiffusion.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2404.12382">arXiv</a>
-        <p></p>
-        <p>
-        Instead of generating the entire image, we only generate the mask region to facilitate fast inpaint task.
-        </p>
-      </td>
-    </tr>
+          <!-- iREPA -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/irepa.jpg" alt="iREPA" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://end2end-diffusion.github.io/irepa">
+                <span class="papertitle">What Matters for Representation Alignment: Global Information or Spatial Structure?</span>
+              </a>
+              <br>
+              <a href="https://1jsingh.github.io/">Jaskirat Singh</a>,
+              <a href="https://scholar.google.com.au/citations?user=GQzvqS4AAAAJ">Xingjian Leng</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://zheng-lab.cecs.anu.edu.au/">Liang Zheng</a>,
+              <a href="https://richzhang.github.io/">Richard Zhang</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+              <a href="https://www.sainingxie.com/">Saining Xie</a>
+              <br>
+              <em>arXiv 2025</em>
+              <br>
+              [<a href="https://end2end-diffusion.github.io/irepa">project page</a>]
+              [<a href="https://arxiv.org/abs/2512.10794">arXiv</a>]
+              <p>Spatial structure, rather than global semantic performance, drives the generation quality of representation alignment in diffusion models.</p>
+            </td>
+          </tr>
 
 
-
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <img src='images/stylegan3.jpg' width="160">
-        </div>
-       
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://github.com/yuval-alaluf/stylegan3-editing">
-			<span class="papertitle">Third time’s the charm? image and video editing with stylegan3.</span>
-        </a>
-        <br>
-        
-				<a href="https://yuval-alaluf.github.io/">Yuval Alaluf</a>,
-				<a href="https://orpatashnik.github.io/">Or Patashnik</a>,
-        <strong>Zongze Wu</strong>,
-				Asif Zamir,
-				<a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
-				<a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
-				<a href="https://danielcohenor.com/">Daniel Cohen-Or</a>,
-        <br>
-        <em>AIM ECCVW 2022</em>,
-        <br>
-        <a href="https://github.com/yuval-alaluf/stylegan3-editing">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2201.13433">arXiv</a>
-        <p></p>
-        <p>
-				We show StyleGAN3 can be trained with unaligned image, and its w/w+ spaces are entangled than  StyleGAN2.
-        </p>
-      </td>
-    </tr>
+          <!-- iMF -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/imf.jpg" alt="iMF" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2512.02012">
+                <span class="papertitle">Improved Mean Flows: On the Challenges of Fastforward Generative Models</span>
+              </a>
+              <br>
+              <a href="https://gsunshine.github.io/">Zhengyang Geng</a>,
+              <a href="https://lyy-iiis.github.io/">Yiyang Lu</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+              <a href="https://zicokolter.com/">J. Zico Kolter</a>,
+              <a href="https://kaiminghe.github.io/">Kaiming He</a>
+              <br>
+              <em>arXiv 2025</em>
+              <br>
+              [<a href="https://github.com/Lyy-iiis/imeanflow">project page</a>]
+              [<a href="https://arxiv.org/abs/2512.02012">arXiv</a>]
+              <p>Improved MeanFlow (iMF) achieves 1.72 FID with a single function evaluation on ImageNet 256x256, closing the gap with multi-step methods using no distillation.</p>
+            </td>
+          </tr>
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/stylealign.gif' width=100%>
-					</div>
-        </div>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://github.com/betterze/StyleAlign">
-			<span class="papertitle">Stylealign: Analysis and applications of aligned stylegan models.
-</span>
-        </a>
-        <br>
-				<strong>Zongze Wu</strong>,
-				<a href="https://yotamnitzan.github.io/">Yotam Nitzan</a>,
-				<a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
-        <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>
-				<br>
-        <em>ICLR 2022</em> <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://github.com/betterze/StyleAlign">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2110.11323">arXiv</a>
-        <p></p>
-        <p>
-          The child model's latent spaces are semantically aligned with its parent's, 
-          inheriting incredibly rich semantics.</p>
-      </td>
-
-      <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-        <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='ever_image'>
-              <img src='images/StyleCLIP_gif.gif' width=100%>
-            </div>
-          </div>
-        </td>
-        <td style="padding:8px;width:80%;vertical-align:middle">
-          <a href="https://github.com/orpatashnik/StyleCLIP">
-        <span class="papertitle">Styleclip: Text-driven manipulation of stylegan imagery.
-  </span>
-          </a>
-          <br>
-          <a href="https://orpatashnik.github.io/">Or Patashnik*</a>,
-          <strong>Zongze Wu*</strong>,
-          <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
-          <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>,
-          <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>
-          <br>
-          <em>ICCV 2021</em> <font color="red"><strong>(Oral Presentation)</strong></font>
-          <br>
-          <a href="https://github.com/orpatashnik/StyleCLIP">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2103.17249">arXiv</a>
-          /
-          <a href="https://www.youtube.com/watch?v=PhR1gpXDu0w">ICCV Video</a>
-          /
-          <a href="https://www.youtube.com/watch?v=5icI0NgALnQ">Demo Video</a>
-          <p></p>
-          <p>
-            Text-based image editing through mapping CLIP space to StyleGAN latent space.</p>
-        </td>
-
-            <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ever_image'>
-                    <img src='images/stylespace.jpg' width=100%>
-                  </div>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://github.com/betterze/StyleSpace">
-              <span class="papertitle">Stylespace analysis: Disentangled controls for stylegan image generation.
-        </span>
-                </a>
-                <br>
-                <strong>Zongze Wu*</strong>,
-                <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
-                <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
-                <br>
-                <em>CVPR 2021</em> <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://github.com/betterze/StyleSpace">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2011.12799">arXiv</a>
-                /
-                <a href="https://www.youtube.com/watch?v=U7qRotRGr1w&feature=youtu.be"> Video</a>
-                <p></p>
-                <p>
-                  The space of channel-wise style parameters is significantly more disentangled than the other intermediate latent spaces in StyleGAN.</p>
-              
-                </td>
-    
+          <!-- VLM Neg Prompt -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/vlm_neg_prompt.jpg" alt="VLM Negative Prompting" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://shelley-golan.github.io/VLM-Guided-Creative-Generation/">
+                <span class="papertitle">VLM-Guided Adaptive Negative Prompting for Creative Generation</span>
+              </a>
+              <br>
+              <a href="https://shelley-golan.github.io/">Shelly Golan</a>,
+              <a href="https://yotamnitzan.github.io/">Yotam Nitzan</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://orpatashnik.github.io/">Or Patashnik</a>
+              <br>
+              <em>arXiv 2025</em>
+              <br>
+              [<a href="https://shelley-golan.github.io/VLM-Guided-Creative-Generation/">project page</a>]
+              [<a href="https://arxiv.org/abs/2510.10715">arXiv</a>]
+              <p>A training-free, inference-time method that uses VLMs to adaptively steer diffusion away from conventional concepts, encouraging novel and creative image generation.</p>
+            </td>
+          </tr>
 
 
+          <!-- TurboFill -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/turbofill.jpg" alt="TurboFill" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://liangbinxie.github.io/projects/TurboFill/">
+                <span class="papertitle">TurboFill: Adapting Few-step Text-to-image Model for Fast Image Inpainting</span>
+              </a>
+              <br>
+              <a href="https://liangbinxie.github.io/">Liangbin Xie</a>,
+              <a href="https://scholar.google.com/citations?user=UI10l34AAAAJ&hl=en">Daniil Pakhomov</a>,
+              <a href="https://scholar.google.com/citations?user=opL6CL8AAAAJ&hl=en">Zhonghao Wang</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://github.com/ziyannchen">Ziyan Chen</a>,
+              <a href="https://scholar.google.com.hk/citations?user=QG2AkuYAAAAJ&hl=zh-CN">Yuqian Zhou</a>,
+              <a href="https://scholar.google.com/citations?user=hLG8AmwAAAAJ&hl=en">Haitian Zheng</a>,
+              <a href="https://scholar.google.com/citations?user=HuerflQAAAAJ&hl=en">Zhifei Zhang</a>,
+              <a href="https://scholar.google.com/citations?user=R0bnqaAAAAAJ&hl=en">Zhe Lin</a>,
+              <a href="https://scholar.google.com.hk/citations?user=mcROAxAAAAAJ&hl=zh-CN">Jiantao Zhou</a>,
+              <a href="https://scholar.google.com.hk/citations?user=OSDCB0UAAAAJ&hl=zh-CN">Chao Dong</a>
+              <br>
+              <em>CVPR 2025</em>
+              <br>
+              [<a href="https://liangbinxie.github.io/projects/TurboFill/">project page</a>]
+              [<a href="https://arxiv.org/abs/2504.00996">arXiv</a>]
+              <p>A fast image inpainting method that achieves high-quality results in just 4 diffusion steps, outperforming multi-step methods that require over 50 steps.</p>
+            </td>
+          </tr>
 
-                <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-                  <td style="padding:16px;width:20%;vertical-align:middle">
-                    <div class="one">
-                      <div class="two" id='ever_image'>
-                        <img src='images/fg_retrieval.jpg' width=100%>
-                      </div>
-                    </div>
-                  </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://openaccess.thecvf.com/content/WACV2021/papers/Wu_Fine-Grained_Foreground_Retrieval_via_Teacher-Student_Learning_WACV_2021_paper.pdf">
-                  <span class="papertitle">Fine-grained foreground retrieval via teacher-student learning.
-            </span>
-                    </a>
-                    <br>
-                    <strong>Zongze Wu*</strong>,
-                    <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
-                    <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
-                    <br>
-                    <em>WACV 2021</em> 
-                    <br>
-                    <a href="https://openaccess.thecvf.com/content/WACV2021/papers/Wu_Fine-Grained_Foreground_Retrieval_via_Teacher-Student_Learning_WACV_2021_paper.pdf">arXiv</a>
-                    /
-                    <a href="https://www.youtube.com/watch?v=C93qoxfxdT8"> Video</a>
-                    <p></p>
-                    <p>
-                      Retrieve foreground images that are semantically compatible with the background.
-                    </td>
+
+          <!-- SliderSpace -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/sliderspace.gif" alt="SliderSpace" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://sliderspace.baulab.info/">
+                <span class="papertitle">SliderSpace: Decomposing the Visual Capabilities of Diffusion Models</span>
+              </a>
+              <br>
+              <a href="https://rohitgandikota.github.io/">Rohit Gandikota</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://richzhang.github.io/">Richard Zhang</a>,
+              <a href="https://baulab.info/">David Bau</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+              <a href="https://home.ttic.edu/~nickkolkin/home.html">Nicholas Kolkin</a>
+              <br>
+              <em>ICCV 2025</em>
+              <br>
+              [<a href="https://sliderspace.baulab.info/">project page</a>]
+              [<a href="https://arxiv.org/abs/2502.01639">arXiv</a>]
+              <p>Automatically decomposes a diffusion model's visual capabilities into controllable, interpretable directions using low-rank adaptors for concept decomposition and style exploration.</p>
+            </td>
+          </tr>
 
 
+          <!-- TurboEdit -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cat2dog.gif" alt="TurboEdit" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://betterze.github.io/TurboEdit/">
+                <span class="papertitle">TurboEdit: Instant text-based image editing</span>
+              </a>
+              <br>
+              <strong>Zongze Wu</strong>, 
+              <a href="https://home.ttic.edu/~nickkolkin/home.html">Nicholas Kolkin</a>,
+              <a href="https://www.linkedin.com/in/jonathan-brandt-23b334/">Jonathan Brandt</a>,
+              <a href="https://richzhang.github.io/">Richard Zhang</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a> 
+              <br>
+              <em>ECCV 2024</em>
+              <br>
+              [<a href="https://betterze.github.io/TurboEdit/">project page</a>]
+              [<a href="https://arxiv.org/abs/2408.08332">arXiv</a>]
+              [<a href="https://www.youtube.com/watch?v=1LG2xCTRc3s&t=1s">Video</a>]
+              <p>Users can upload an image, and edit the image with natural language. Each edit only takes half a second.</p>
+            </td>
+          </tr>
 
-            
+
+          <!-- Lazy Diffusion -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/lazy_diffusion.jpg" alt="Lazy Diffusion" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://lazydiffusion.github.io/">
+                <span class="papertitle">Lazy diffusion transformer for interactive image editing</span>
+              </a>
+              <br>
+              <a href="https://yotamnitzan.github.io/">Yotam Nitzan</a>,
+              <strong>Zongze Wu</strong>,
+              <a href="https://richzhang.github.io/">Richard Zhang</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
+              <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>,
+              <a href="https://taesung.me/">Taesung Park</a>,
+              <a href="https://mgharbi.com/">Michaël Gharbi</a>
+              <br>
+              <em>ECCV 2024</em>
+              <br>
+              [<a href="https://lazydiffusion.github.io/">project page</a>]
+              [<a href="https://arxiv.org/abs/2404.12382">arXiv</a>]
+              <p>Instead of generating the entire image, we only generate the mask region to facilitate fast inpaint task.</p>
+            </td>
+          </tr>
+
+
+          <!-- StyleGAN3 Editing -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/stylegan3.jpg" alt="StyleGAN3 Editing" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/yuval-alaluf/stylegan3-editing">
+                <span class="papertitle">Third time's the charm? Image and video editing with StyleGAN3</span>
+              </a>
+              <br>
+              <a href="https://yuval-alaluf.github.io/">Yuval Alaluf</a>,
+              <a href="https://orpatashnik.github.io/">Or Patashnik</a>,
+              <strong>Zongze Wu</strong>,
+              Asif Zamir,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
+              <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
+              <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>
+              <br>
+              <em>AIM ECCVW 2022</em>
+              <br>
+              [<a href="https://github.com/yuval-alaluf/stylegan3-editing">project page</a>]
+              [<a href="https://arxiv.org/abs/2201.13433">arXiv</a>]
+              <p>We show StyleGAN3 can be trained with unaligned images, and its w/w+ spaces are more entangled than StyleGAN2.</p>
+            </td>
+          </tr>
+
+
+          <!-- StyleAlign -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/stylealign.gif" alt="StyleAlign" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/betterze/StyleAlign">
+                <span class="papertitle">StyleAlign: Analysis and applications of aligned StyleGAN models</span>
+              </a>
+              <br>
+              <strong>Zongze Wu</strong>,
+              <a href="https://yotamnitzan.github.io/">Yotam Nitzan</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
+              <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>
+              <br>
+              <em>ICLR 2022</em> <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              [<a href="https://github.com/betterze/StyleAlign">project page</a>]
+              [<a href="https://arxiv.org/abs/2110.11323">arXiv</a>]
+              <p>The child model's latent spaces are semantically aligned with its parent's, inheriting incredibly rich semantics.</p>
+            </td>
+          </tr>
+
+
+          <!-- StyleCLIP -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/StyleCLIP_gif.gif" alt="StyleCLIP" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/orpatashnik/StyleCLIP">
+                <span class="papertitle">StyleCLIP: Text-driven manipulation of StyleGAN imagery</span>
+              </a>
+              <br>
+              <a href="https://orpatashnik.github.io/">Or Patashnik*</a>,
+              <strong>Zongze Wu*</strong>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>, 
+              <a href="https://danielcohenor.com/">Daniel Cohen-Or</a>,
+              <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>
+              <br>
+              <em>ICCV 2021</em> <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              [<a href="https://github.com/orpatashnik/StyleCLIP">project page</a>]
+              [<a href="https://arxiv.org/abs/2103.17249">arXiv</a>]
+              [<a href="https://www.youtube.com/watch?v=PhR1gpXDu0w">ICCV Video</a>]
+              [<a href="https://www.youtube.com/watch?v=5icI0NgALnQ">Demo Video</a>]
+              <p>Text-based image editing through mapping CLIP space to StyleGAN latent space.</p>
+            </td>
+          </tr>
+
+
+          <!-- StyleSpace -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/stylespace.jpg" alt="StyleSpace" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://github.com/betterze/StyleSpace">
+                <span class="papertitle">StyleSpace analysis: Disentangled controls for StyleGAN image generation</span>
+              </a>
+              <br>
+              <strong>Zongze Wu*</strong>,
+              <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+              <br>
+              <em>CVPR 2021</em> <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              [<a href="https://github.com/betterze/StyleSpace">project page</a>]
+              [<a href="https://arxiv.org/abs/2011.12799">arXiv</a>]
+              [<a href="https://www.youtube.com/watch?v=U7qRotRGr1w&feature=youtu.be">Video</a>]
+              <p>The space of channel-wise style parameters is significantly more disentangled than the other intermediate latent spaces in StyleGAN.</p>
+            </td>
+          </tr>
+
+
+          <!-- Fine-Grained Foreground Retrieval -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/fg_retrieval.jpg" alt="Foreground Retrieval" width="160" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openaccess.thecvf.com/content/WACV2021/papers/Wu_Fine-Grained_Foreground_Retrieval_via_Teacher-Student_Learning_WACV_2021_paper.pdf">
+                <span class="papertitle">Fine-grained foreground retrieval via teacher-student learning</span>
+              </a>
+              <br>
+              <strong>Zongze Wu*</strong>,
+              <a href="https://www.cs.huji.ac.il/~danix/">Dani Lischinski</a>,
+              <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+              <br>
+              <em>WACV 2021</em> 
+              <br>
+              [<a href="https://openaccess.thecvf.com/content/WACV2021/papers/Wu_Fine-Grained_Foreground_Retrieval_via_Teacher-Student_Learning_WACV_2021_paper.pdf">arXiv</a>]
+              [<a href="https://www.youtube.com/watch?v=C93qoxfxdT8">Video</a>]
+              <p>Retrieve foreground images that are semantically compatible with the background.</p>
+            </td>
+          </tr>
+
+
           </tbody></table>
+
+          <!-- Footer -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
@@ -302,6 +418,7 @@
               </td>
             </tr>
           </tbody></table>
+
         </td>
       </tr>
     </table>
