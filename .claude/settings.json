@@ -1,0 +1,113 @@
+{
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "75",
+    "CLAUDE_CODE_ENABLE_REMOTE_CONTROL": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Edit",
+      "Write",
+      "Read",
+      "WebFetch",
+      "WebSearch",
+      "NotebookEdit",
+      "Glob",
+      "Grep",
+      "LSP",
+      "Task",
+      "TodoWrite",
+      "Skill",
+      "MultiEdit",
+      "ExitPlanMode",
+      "BashOutput",
+      "KillShell",
+      "Edit(~/.claude/skills/pluto-job-ops/**)",
+      "mcp__claude_ai_Slack__slack_read_thread",
+      "Edit(~/.claude/skills/morictl/**)",
+      "Bash(mkdir -p /home/colligo/.claude/skills/autodebug)",
+      "Edit(~/.claude/skills/autodebug/**)",
+      "Read(//mnt/localssd/mori-logdir/**)",
+      "Read(//logging-fs/logs/pluto/jobs/zongzew/**)",
+      "Bash(mkdir -p /home/colligo/.claude/skills/setup-debug-node)",
+      "Edit(~/.claude/skills/setup-debug-node/**)"
+    ],
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "/sensei-fs/users/zongzew",
+      "/mnt/localssd/DThink",
+      "/home/colligo",
+      "/home/colligo/.claude/skills"
+    ]
+  },
+  "hooks": {
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "agent",
+            "prompt": "Summarize the key context, decisions, and progress from the current session so that it can be restored after compaction.",
+            "timeout": 30,
+            "model": "claude-sonnet-4-6",
+            "statusMessage": "Saving key context before compaction..."
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-review@claude-code-plugins": false,
+    "code-simplifier@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "superpowers@superpowers-marketplace": true,
+    "claude-md-management@claude-plugins-official": true,
+    "context7@claude-plugins-official": false,
+    "firecrawl@claude-plugins-official": true,
+    "planning-with-files@planning-with-files": true,
+    "next-task@agentsys": true,
+    "pua@pua-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "planning-with-files": {
+      "source": {
+        "source": "github",
+        "repo": "OthmanAdi/planning-with-files"
+      }
+    },
+    "agentsys": {
+      "source": {
+        "source": "github",
+        "repo": "agent-sh/agentsys"
+      }
+    },
+    "claude-code-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code"
+      }
+    },
+    "pua-skills": {
+      "source": {
+        "source": "github",
+        "repo": "tanweai/pua"
+      }
+    }
+  },
+  "language": "Chinese (Mandarin) for conversation, but keep all technical terms in English (e.g. tokens, diffusion, encoder, latent). Write reports, documentation, and formal writeups in English when asked.",
+  "model": "claude-opus-4-8",
+  "effortLevel": "max",
+  "promptSuggestionEnabled": true,
+  "autoUpdatesChannel": "latest",
+  "showThinkingSummaries": true,
+  "skipDangerousModePermissionPrompt": true
+}
